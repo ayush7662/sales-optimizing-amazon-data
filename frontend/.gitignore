@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+dist-ssr/
+
+# Vite / bundler caches
+.cache/
+.vite/
+vite.cache/
+
+# Testing
+coverage/
+*.lcov
+
+# Local env and credentials
+.env
+.env.local
+.env.*.local
+
+# Tailwind/JIT caches
+*.tmp.css
+*.hot-update.*
+
+# TypeScript build info
+*.tsbuildinfo
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

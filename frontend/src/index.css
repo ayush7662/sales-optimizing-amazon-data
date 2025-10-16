@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+/* Theme tokens without touching tailwind.config.js */
+:root {
+  --bg: 248 250 252;      /* slate-50 */
+  --fg: 15 23 42;         /* slate-900 */
+  --panel: 255 255 255;   /* white */
+  --panel-border: 226 232 240; /* slate-200 */
+  --muted: 100 116 139;   /* slate-500 */
+  --accent: 37 99 235;    /* blue-600 */
+}
+
+html[data-theme="dark"] {
+  --bg: 2 6 23;           /* slate-950 */
+  --fg: 248 250 252;      /* slate-50 */
+  --panel: 15 23 42;      /* slate-900 */
+  --panel-border: 51 65 85; /* slate-700 */
+  --muted: 148 163 184;   /* slate-400 */
+  --accent: 37 99 235;    /* blue-600 */
+}
+
+/* Apply tokens */
+body {
+  @apply antialiased;
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+.card {
+  background-color: rgb(var(--panel));
+  border-color: rgb(var(--panel-border));
+}
+
+.input {
+  background-color: rgb(var(--panel));
+  border-color: rgb(var(--panel-border));
+  color: rgb(var(--fg));
+}
+
+.btn-primary {
+  background-color: rgb(var(--accent));
+  color: white;
+}
+.btn-ghost {
+  background-color: transparent;
+  color: rgb(var(--fg));
+  border-color: rgb(var(--panel-border));
+}
+
+/* Subtle table header */
+.table-head {
+  background-color: rgba(var(--panel-border), 0.3);
+}
