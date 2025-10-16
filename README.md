@@ -146,4 +146,4 @@ Frontend
 MIT
 
 ## Maintainer
-Gaurav Jikar
+Ayush Raj
