@@ -2,6 +2,9 @@
 
 A full‑stack web app that fetches Amazon product details by ASIN, uses an AI model to optimize the listing (title, bullets, description, keywords), shows original vs optimized side‑by‑side, and stores optimization history in MySQL.
 
+# Screen Recording video
+https://drive.google.com/file/d/1vvAgSPm2CB_k9EneSXayauFE5sfmwurQ/view?usp=sharing
+
 ## Features
 - Enter an ASIN and fetch live product data from Amazon product pages.
 - Robust scraping with Axios first, Puppeteer fallback, locale rotation (.com/.in/.co.uk), retry/backoff, A+ content fallbacks, and a “mock” fallback flag.
